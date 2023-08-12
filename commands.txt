@@ -1,0 +1,9 @@
+1.
+docker build -t node-docker .
+
+2.
+docker run --rm -d -p 3000:3000 --name express-server -v /$(pwd)/index.js:/app/index.js node-docker
+
+3.
+docker exec -it express-server sh
+

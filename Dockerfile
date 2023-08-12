@@ -9,4 +9,4 @@ RUN npm install --production
 
 COPY . .
 
-CMD ["npx", "nodemon", "index.js"]
+CMD ["npx", "nodemon", "-L", "index.js"]
