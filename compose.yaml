@@ -4,5 +4,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./index.js:/app/index.js
+      - type: bind
+        source: ./index.js
+        target: /app/index.js
     command: npx nodemon -L index.js
