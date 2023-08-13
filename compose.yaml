@@ -1,0 +1,8 @@
+services:
+  express-server:
+    image: node-docker
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./index.js:/app/index.js
+    command: npx nodemon -L index.js
